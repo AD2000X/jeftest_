@@ -115,14 +115,14 @@ def main():
         'Age',
         min_value=int(jef_df['age'].min()),
         max_value=int(jef_df['age'].max()),
-        value=(30, 45)
+        value=(18, 120)
     )
     
     iq_range = st.sidebar.slider(
         'IQ',
         min_value=int(jef_df['est_IQ'].min()),
         max_value=int(jef_df['est_IQ'].max()),
-        value=(85, 115)
+        value=(70, 180)
     )
     
     # Score inputs
