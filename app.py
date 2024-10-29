@@ -90,10 +90,32 @@ def create_zscore_plot(stats_df: pd.DataFrame, age_range: Tuple[float, float],
         showlegend=False,
         margin=dict(t=50),
         annotations=[
-            dict(text=f"N = {n_samples}", x=1, y=-4.8, showarrow=False, xanchor='right'),
-            dict(text=f"Age range: {age_range[0]} ~ {age_range[1]}", x=1, y=-4.4, showarrow=False, xanchor='right'),
-            dict(text=f"IQ range: {iq_range[0]} ~ {iq_range[1]}", x=1, y=-4, showarrow=False, xanchor='right')
-        ]
+            dict(
+                text=f"N = {n_samples}", 
+                x=1, 
+                y=-4.8, 
+                showarrow=False, 
+                xanchor='right',
+                font=dict(size=12, color="black")  # color and font size
+            ),
+            dict(
+                text=f"Age range: {age_range[0]} ~ {age_range[1]}", 
+                x=1, 
+                y=-4.4, 
+                showarrow=False, 
+                xanchor='right',
+                font=dict(size=12, color="black")  # color and font size
+            ),
+            dict(
+                text=f"IQ range: {iq_range[0]} ~ {iq_range[1]}", 
+                x=1, 
+                y=-4, 
+                showarrow=False, 
+                xanchor='right',
+                font=dict(size=12, color="black")  # color and font size
+            )
+]
+
     )
     
     return fig
