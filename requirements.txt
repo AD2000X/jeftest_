@@ -2,7 +2,7 @@ streamlit==1.24.0
 pandas==1.5.0
 numpy==1.24.3
 plotly==5.5.0
-openpyxl  # 用於處理 .xlsx 格式的 Excel 文件
-setuptools>=65.5.0  # 安裝較新的 setuptools，提供 distutils 支持
-wheel  # 安裝 wheel 以加速包安裝
+openpyxl  
+setuptools>=65.5.0  
+wheel  
 pip>=24.3.1
